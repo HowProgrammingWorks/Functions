@@ -23,7 +23,12 @@ function f1() {
 
 }
 
-f1();
+f1();/* { cities: [ 'Athens', 'Roma' ] }
+        [ 'ATHENS', 'ROMA' ]
+        { cities: [ 'Athens', 'Roma' ] }
+        [ 'athens', 'roma' ]
+        { cities:  [ 'London', 'Beijing', 'Kiev' ] }
+        [ 'LONDON', 'BEIJING', 'KIEV' ]*/
 
-console.dir({ cities });
-console.dir(cities.map(f));
+console.dir({ cities }); // { cities:  ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'] }
+console.dir(cities.map(f)); // [ 6, 4, 6, 7, 4, 4]

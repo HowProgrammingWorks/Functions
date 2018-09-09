@@ -17,4 +17,6 @@ const printLine = (
   });
 };
 
-printLine('./c-comments.js', 5);
+printLine('./c-comments.js', 5);/*{ fileName: './c-comments.js',
+                                    lineNumber: 5,
+                                    line: 'const printLine = (' }*/

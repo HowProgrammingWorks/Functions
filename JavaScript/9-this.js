@@ -20,6 +20,6 @@ const Context = function() {
 
 const city = new Context();
 
-console.log('city.f1() = ' + city.f1());
-console.log('city.f2() = ' + city.f2());
-console.log('city.f3() = ' + city.f3());
+console.log('city.f1() = ' + city.f1()); // city.f1() = Kiev
+console.log('city.f2() = ' + city.f2()); // city.f2() = Marcus
+console.log('city.f3() = ' + city.f3()); // city.f3() = Kiev

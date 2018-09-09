@@ -4,7 +4,7 @@ const f1 = (...args) => {
   console.log(args);
 };
 
-f1(1, 2, 3);
+f1(1, 2, 3); // [ 1, 2, 3 ]
 
 const f2 = (...args) => {
   args.forEach(arg => {
@@ -17,4 +17,9 @@ const f2 = (...args) => {
   });
 };
 
-f2(1, 'Marcus', { field: 'value' });
+f2(1, 'Marcus', { field: 'value' });/*Type: number
+                                      Value: 1
+                                      Type: string
+                                      Value: Marcus
+                                      Type: object
+                                      Value: {"field":"value"}*/
