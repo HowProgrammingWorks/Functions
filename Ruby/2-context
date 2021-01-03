@@ -1,0 +1,30 @@
+cities = ["Athens", "Roma", "London", "Beijing", "Kiev", "Riga"];
+
+f = -> (s) { s.length }
+
+def my_map(arr, fn)
+  result = []
+  arr.each { |element| result << fn.call(element) }
+  result
+end
+
+def f1()
+  cities = ["Athens", "Roma"];
+  f = -> (s) { s.upcase }
+  puts cities
+  puts my_map(cities,f)
+  
+      def myContext 
+        cities = ["LONDON", "BEIJING", "KIEV"];
+        f = -> (s) { s.downcase }
+        puts("in f1:")
+        puts(cities)
+        puts my_map(cities,f)
+      end 
+    myContext()
+end
+
+
+f1()
+puts(cities)
+puts my_map(cities,f)

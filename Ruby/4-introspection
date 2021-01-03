@@ -1,0 +1,40 @@
+def inc(a)
+  return ++a
+end
+
+max = -> (a, b) { a > b ? a : b }
+puts "Name: "
+puts method(:inc).name
+
+puts "Parameters: "
+
+puts method(:inc).parameters
+puts max.parameters
+
+
+puts "ID: "
+
+puts method(:inc).__id__
+puts max.__id__
+
+puts "Class name: "
+
+puts method(:inc).class.name
+puts max.class.name
+
+
+puts "Error: "
+
+def divide a, b
+    if b == 0 || b == 0.0
+        raise StandardError, 'На ноль делить нельзя', caller
+    end
+    a / b
+end
+ 
+puts divide(1, 0)
+
+
+
+
+
