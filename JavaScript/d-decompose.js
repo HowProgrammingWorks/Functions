@@ -5,7 +5,7 @@ const merge = (
   ...args // array of array
   // Returns: array
 ) => {
-  const array = args[0];
+  const array = [...args[0]];
   for (let i = 1; i < args.length; i++) {
     const arr = args[i];
     for (let j = 0; j < arr.length; j++) {
